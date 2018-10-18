@@ -3,7 +3,7 @@
 
 This code is developed based on MatConvNet.
 
-You first need to download the NetVLAD code, then run our training methods. 
+You first need to download the NetVLAD code (https://github.com/Relja/netvlad), then run our training methods. 
 
 
 If you use our codes or models in your research, please cite:
