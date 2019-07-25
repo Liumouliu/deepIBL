@@ -15,6 +15,7 @@ Our model is implemented in MatConvNet 1.0-beta25. Other versions should be OK.
 You first need to download the NetVLAD code (https://github.com/Relja/netvlad), then run our training methods. 
 Our pre-trained model by Gaussian kernel defined SARE loss (Our-Ind.) is available at: https://drive.google.com/file/d/1riu7rJEH4Eh5vhQ_tM8dBtUfwhKilqhq/view?usp=sharing
 
+The model is VGG-16 + NetVLAD + whitening, trained on Pitts30k. 
 
 For pre-trained model on CVUSA dataset, please download [CVUSA_model](https://drive.google.com/file/d/1oFUzLJkGXKLBabxYGzLNMSfeWW-gF3LP/view?usp=sharing)
 
