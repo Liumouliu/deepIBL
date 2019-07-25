@@ -26,20 +26,33 @@ From the above table, we can see that our method signficantly outperforms the or
 ### Sample training script
 
 setup;
+
 doPitts250k= false;
+
 if doPitts250k
+
     % Pittsburgh 250k
+    
     lr= 0.0001;
+    
 else
+
     % Pittsburgh 30k
+    
     lr= 0.001;
+    
 end
 
+
 dbTrain= dbPitts(doPitts250k, 'train');
+
 dbVal= dbPitts(doPitts250k, 'val');
+
 dbTest= dbPitts(doPitts250k, 'test');
 
+
 % Gaussian kernel defined SARE loss (Our-Ind.)
+
 sessionID= trainGaussKernalInd(dbTrain, dbVal, ...
     'netID', 'vd16','layerName', 'conv5_3', 'backPropToLayer', 'conv5_1', ...
     'method', 'vlad_preL2_intra', ...
