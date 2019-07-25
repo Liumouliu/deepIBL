@@ -50,6 +50,18 @@ sessionID= trainGaussKernalInd(dbTrain, dbVal, ...
 
 ~~~~
 
+The training stage usually can be early stopped in 4 epchoes. For example, using the function pickBestNet, below is my result.
+
+53e0 Best epoch: 4 (out of 7)
+===========================================
+Recall@N      0001 0002 0003 0004 0005 0010 
+===========================================
+off-the-shelf 0.80 0.86 0.90 0.92 0.93 0.96 
+our trained   0.89 0.94 0.95 0.96 0.97 0.98 
+trained/shelf 1.12 1.09 1.06 1.05 1.05 1.02
+
+
+
 ### Testing notes
 
 1. Since I have already included the PCA whitening weights, please do not add PCA layer again. That is to say, you need to comment the below lines in your testing codes:
