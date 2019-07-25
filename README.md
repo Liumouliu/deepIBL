@@ -40,9 +40,6 @@ dbTrain= dbPitts(doPitts250k, 'train');
 
 dbVal= dbPitts(doPitts250k, 'val');
 
-dbTest= dbPitts(doPitts250k, 'test');
-
-
 % Gaussian kernel defined SARE loss (Our-Ind.)
 
 sessionID= trainGaussKernalInd(dbTrain, dbVal, ...
