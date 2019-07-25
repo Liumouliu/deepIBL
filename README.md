@@ -57,6 +57,11 @@ sessionID= trainGaussKernalInd(dbTrain, dbVal, ...
 net= addPCA(net, dbTrain, 'doWhite', true, 'pcaDim', 4096);
 ~~~~
 
+2. To do experiments on Tokyo 24/7 dataset, you need to resize query images (Only query, don't resize database images):
+
+~~~~
+ims_= vl_imreadjpeg(thisImageFns, 'numThreads', opts.numThreads, 'Resize', 640);
+~~~~
 
 If you use our codes or models in your research, please cite:
 
