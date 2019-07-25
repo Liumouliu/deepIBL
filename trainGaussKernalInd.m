@@ -16,7 +16,7 @@ opts= struct(...
     'nNegCap', 10, ...
     'nNegCache', 10, ...
     'nEpoch', 30, ...
-    'margin', 0.1, ...
+    'margin', 0.1, ... % not used
     'excludeVeryHard', false, ...
     'jitterFlip', false, ...
     'jitterScale', [], ...
@@ -352,7 +352,7 @@ for iEpoch= 1:opts.nEpoch
             dsSq_t = exp(-dsSq);
             
             
-            % for each negative image, compute cpq
+            % for each negative image, compute cpq, please refer Eq.(3)(4)
             
             cpq = zeros(thisNumIms-2,1);
             loss = 0.0;
@@ -364,7 +364,7 @@ for iEpoch= 1:opts.nEpoch
             losses(end+1)= loss;
 
 
-            % ---------- gradients
+            % gradients, please refer Table 1
             
             dzdy= zeros(size(feats,1), thisNumIms, 'single');
             thisbatchsize = 0;
