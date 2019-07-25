@@ -17,6 +17,8 @@ Our pre-trained model by Gaussian kernel defined SARE loss (Our-Ind.) is availab
 
 The model is VGG-16 + NetVLAD + whitening, trained on Pitts30k. The feature dimension is 4096. If you need feature embedding at smaller dimension, you can simply take the top-K elements, and then L_2 normalize it.
 
+![alt text](./comparison.png)
+
 For pre-trained model on CVUSA dataset, please download [CVUSA_model](https://drive.google.com/file/d/1oFUzLJkGXKLBabxYGzLNMSfeWW-gF3LP/view?usp=sharing)
 
 For pre-trained model on CVACT dataset, please download [CVACT_model](https://drive.google.com/file/d/14Yd0-ICAaABQQlWaGjSkDsH8L3YUuML0/view?usp=sharing)
