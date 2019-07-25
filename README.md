@@ -49,7 +49,7 @@ sessionID= trainGaussKernalInd(dbTrain, dbVal, ...
 
 ~~~~
 
-### testing notes
+### Testing notes
 
 1. Since I have already included the PCA whitening weights, please do not add PCA layer again. That is to say, you need to comment the below lines in your testing codes:
 
@@ -65,17 +65,26 @@ ims_= vl_imreadjpeg(thisImageFns, 'numThreads', opts.numThreads, 'Resize', 640);
 
 You also need to convert all .png images to .jpg images to enable vl_imreadjpeg. You can use [convertPngtoJPG.m](./convertPngtoJPG.m) to do that.
 
-If you use our codes or models in your research, please cite:
+# Publication
 
-@article{liu2018deep,
-  title={Deep Stochastic Attraction and Repulsion Embedding for Image Based Localization},
-  author={Liu, Liu and Li, Hongdong and Dai, Yuchao},
-  journal={arXiv preprint arXiv:1808.08779},
-  year={2018}
+If you like, you can cite our following publication:
+
+*Liu Liu; Hongdong Li; Yuchao Dai. Stochastic Attraction-Repulsion Embedding for Large Scale Localization. In IEEE International Conference on Computer Vision (ICCV), October 2019.*
+
+
+@InProceedings{Liu_2019_ICCV,
+author = {Liu, Liu and Li, Hongdong and Dai, Yuchao},
+title = {Stochastic Attraction-Repulsion Embedding for Large Scale Localization},
+booktitle = {The IEEE International Conference on Computer Vision (ICCV)},
+month = {October},
+year = {2019}
 }
 
+and also the following prior work:
 
+1. Arandjelovic, Relja, et al. "NetVLAD: CNN architecture for weakly supervised place recognition." Proceedings of the IEEE conference on computer vision and pattern recognition. 2016.
 
+# Contact
 
-If you need more pre-trained models, Please contact me. (Liu.Liu@anu.edu.au) 
+If you have any questions, drop me an email (Liu.Liu@anu.edu.au)
 
