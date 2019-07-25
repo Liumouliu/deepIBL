@@ -19,6 +19,8 @@ The model is VGG-16 + NetVLAD + whitening, trained on Pitts30k. The feature dime
 
 ![alt text](./comparison.png)
 
+If you want to do some experiments on the above 4 datasets, please contact the original authors, not me.
+
 For pre-trained model on CVUSA dataset, please download [CVUSA_model](https://drive.google.com/file/d/1oFUzLJkGXKLBabxYGzLNMSfeWW-gF3LP/view?usp=sharing)
 
 For pre-trained model on CVACT dataset, please download [CVACT_model](https://drive.google.com/file/d/14Yd0-ICAaABQQlWaGjSkDsH8L3YUuML0/view?usp=sharing)
