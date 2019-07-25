@@ -63,7 +63,7 @@ net= addPCA(net, dbTrain, 'doWhite', true, 'pcaDim', 4096);
 ims_= vl_imreadjpeg(thisImageFns, 'numThreads', opts.numThreads, 'Resize', 640);
 ~~~~
 
-You also need to convert all .png images to .jpg images to enable vl_imreadjpeg. You can use this script to do that.
+You also need to convert all .png images to .jpg images to enable vl_imreadjpeg. You can use this script ([convertPngtoJPG.m]) to do that.
 
 If you use our codes or models in your research, please cite:
 
