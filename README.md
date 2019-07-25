@@ -25,6 +25,7 @@ From the above table, we can see that our method signficantly outperforms the or
 
 ### Sample training script
 
+~~~~
 setup;
 
 doPitts250k= false;
@@ -46,6 +47,7 @@ sessionID= trainGaussKernalInd(dbTrain, dbVal, ...
     'learningRate', lr, ...
     'doDraw', true);
 
+~~~~
 
 
 
