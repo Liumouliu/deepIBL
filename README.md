@@ -21,7 +21,7 @@ The model is VGG-16 + NetVLAD + whitening, trained on Pitts30k. The feature dime
 
 From the above table, we can see that our method significantly outperforms the original NetVLAD on challenging Tokyo 24/7 and Sf-0 dataset. You can get some ideas why our trained CNN performs better from the following figure:
 ![alt text](./heatmap.png)
-
+As can be seen, our method focuses on regions that are useful for image geo-localization while emphasizing the distinctive details on buildings. On the other hand, the original NetVLAD emphasizes local features, not the overall building style.
 
 If you want to do some experiments on the above 4 datasets, please contact the original authors, not me.
 
