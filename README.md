@@ -2,7 +2,7 @@
 # Stochastic Attraction-Repulsion Embedding for Large Scale Localization
 
 This contains the code and model for training ground-view geo-localization method described in: Stochastic Attraction-Repulsion Embedding for Large Scale Localization, ICCV2019. 
-
+![alt text](./pipeline.png)
 
 
 
