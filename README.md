@@ -15,11 +15,11 @@ Our model is implemented in MatConvNet 1.0-beta25. Other versions should be OK.
 You first need to download the NetVLAD code (https://github.com/Relja/netvlad), then run our training methods. 
 Our pre-trained model by Gaussian kernel defined SARE loss (Our-Ind.) is available at: https://drive.google.com/file/d/1riu7rJEH4Eh5vhQ_tM8dBtUfwhKilqhq/view?usp=sharing
 
-The model is VGG-16 + NetVLAD + whitening, trained on Pitts30k. The feature dimension is 4096. If you need feature embedding at smaller dimension, you can simply take the top-K elements, and then L_2 normalize it.
+The model is VGG-16 + NetVLAD + whitening, trained on Pitts30k. The feature dimension is 4096. If you need feature embedding at a smaller dimension, you can simply take the top-K elements, and then L_2 normalize it.
 
 ![alt text](./comparison.png)
 
-From the above table, we can see that our method signficantly outperforms the original NetVLAD on chanllenging Tokyo 24/7 and Sf-0 dataset. If you want to do some experiments on the above 4 datasets, please contact the original authors, not me.
+From the above table, we can see that our method significantly outperforms the original NetVLAD on challenging Tokyo 24/7 and Sf-0 dataset. If you want to do some experiments on the above 4 datasets, please contact the original authors, not me.
 
 ## Codes
 
