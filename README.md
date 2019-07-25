@@ -29,18 +29,8 @@ setup;
 
 doPitts250k= false;
 
-if doPitts250k
-    % Pittsburgh 250k
-    
-    lr= 0.0001;
-else
-    % Pittsburgh 30k
-  
-    lr= 0.001;
-    
-end
-
-
+lr= 0.001;
+   
 dbTrain= dbPitts(doPitts250k, 'train');
 
 dbVal= dbPitts(doPitts250k, 'val');
