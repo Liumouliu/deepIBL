@@ -51,7 +51,7 @@ sessionID= trainGaussKernalInd(dbTrain, dbVal, ...
 
 ### testing notes
 
-1. Since I have already included the PCA whitening weights, please do not add PCA layer again. That is to say, you need to comment the below lines:
+1. Since I have already included the PCA whitening weights, please do not add PCA layer again. That is to say, you need to comment the below lines in your testing codes:
 
 ~~~~
 net= addPCA(net, dbTrain, 'doWhite', true, 'pcaDim', 4096);
