@@ -21,7 +21,29 @@ The model is VGG-16 + NetVLAD + whitening, trained on Pitts30k. The feature dime
 
 From the above table, we can see that our method signficantly outperforms the original NetVLAD on chanllenging Tokyo 24/7 and Sf-0 dataset. If you want to do some experiments on the above 4 datasets, please contact the original authors, not me.
 
+## Codes
 
+### Sample training script
+
+setup;
+doPitts250k= false;
+if doPitts250k
+    % Pittsburgh 250k
+    lr= 0.0001;
+else
+    % Pittsburgh 30k
+    lr= 0.001;
+end
+
+dbTrain= dbPitts(doPitts250k, 'train');
+dbVal= dbPitts(doPitts250k, 'val');
+dbTest= dbPitts(doPitts250k, 'test');
+
+sessionID= trainGaussKernalSingleNeg(dbTrain, dbVal, ...
+    'netID', 'vd16','layerName', 'conv5_3', 'backPropToLayer', 'conv5_1', ...
+    'method', 'vlad_preL2_intra', ...
+    'learningRate', lr, ...
+    'doDraw', true);
 
 
 
