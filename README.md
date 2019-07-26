@@ -23,7 +23,8 @@ From the above table, we can see that our method significantly outperforms the o
 ![alt text](./heatmap.png)
 As can be seen, our method focuses on regions that are useful for image geo-localization while emphasizing the distinctive details on buildings. On the other hand, the original NetVLAD emphasizes local features, not the overall building style.
 
-If you want to do some experiments on the above 4 datasets, please contact the original authors, not me.
+If you want to do some experiments on the above 4 datasets, please contact the original authors, not me. I would express my thanks to Prof. Akihiko Torii who generously provided me with the data.
+
 
 ## Codes
 
@@ -96,11 +97,6 @@ year = {2019}
 and also the following prior work:
 
 1. Arandjelovic, Relja, et al. "NetVLAD: CNN architecture for weakly supervised place recognition." Proceedings of the IEEE conference on computer vision and pattern recognition. 2016.
-
-# ACKNOWLEDGEMENTS
-
-I would express my thanks to Prof. Akihiko Torii who generously provided me with the data.
-
 
 # Contact
 
