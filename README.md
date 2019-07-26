@@ -97,6 +97,11 @@ and also the following prior work:
 
 1. Arandjelovic, Relja, et al. "NetVLAD: CNN architecture for weakly supervised place recognition." Proceedings of the IEEE conference on computer vision and pattern recognition. 2016.
 
+# Thanks
+
+I would express my thanks to Prof. Akihiko Torii who generously provided me with the data.
+
+
 # Contact
 
 If you have any questions, drop me an email (Liu.Liu@anu.edu.au)
