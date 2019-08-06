@@ -1,7 +1,7 @@
 
-# Stochastic Attraction-Repulsion Embedding for Large Scale Localization
+# Stochastic Attraction-Repulsion Embedding for Large Scale Image Localization
 
-This contains the code and model for ground-view geo-localization method described in: Stochastic Attraction-Repulsion Embedding for Large Scale Localization, ICCV2019. 
+This contains the code and model for ground-view geo-localization method described in: Stochastic Attraction-Repulsion Embedding for Large Scale Image Localization, ICCV2019. 
 
 ![alt text](./pipeline.png)
 
@@ -83,12 +83,12 @@ You also need to convert all .png images to .jpg images to enable vl_imreadjpeg.
 
 If you like, you can cite our following publication:
 
-*Liu Liu; Hongdong Li; Yuchao Dai. Stochastic Attraction-Repulsion Embedding for Large Scale Localization. In IEEE International Conference on Computer Vision (ICCV), October 2019.*
+*Liu Liu; Hongdong Li; Yuchao Dai. Stochastic Attraction-Repulsion Embedding for Large Scale Image Localization. In IEEE International Conference on Computer Vision (ICCV), October 2019.*
 
 
 @InProceedings{Liu_2019_ICCV,
 author = {Liu, Liu and Li, Hongdong and Dai, Yuchao},
-title = {Stochastic Attraction-Repulsion Embedding for Large Scale Localization},
+title = {Stochastic Attraction-Repulsion Embedding for Large Scale Image Localization},
 booktitle = {The IEEE International Conference on Computer Vision (ICCV)},
 month = {October},
 year = {2019}
